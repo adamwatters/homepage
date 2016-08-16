@@ -29,7 +29,7 @@ h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 hr.star-light,
 hr.star-primary {
@@ -506,4 +506,31 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.profile-img_container {
+  width: 100%;
+  text-align: left;
+}
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.section {
+  border-top: 1px solid black;
+}
+.social-links {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 16px;
+}
+.social-links a {
+  text-decoration: underline;
+}
+.social-links a:hover {
+  text-decoration: none;
+}
+.picture-strip {
+  height: 90px;
 }
