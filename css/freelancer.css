@@ -6,6 +6,7 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  padding-bottom: 40px;
 }
 p {
   font-size: 20px;
@@ -520,17 +521,22 @@ fieldset[disabled] .btn-success.active {
 .section {
   border-top: 1px solid black;
 }
+.project-img {
+  width: 100%;
+}
 .social-links {
   list-style: none;
   padding-left: 0px;
   font-size: 16px;
+}
+.social-links li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
 }
 .social-links a {
   text-decoration: underline;
 }
 .social-links a:hover {
   text-decoration: none;
-}
-.picture-strip {
-  height: 90px;
 }

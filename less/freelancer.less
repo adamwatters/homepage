@@ -4,6 +4,7 @@
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+    padding-bottom: 40px;
 }
 
 p {
@@ -497,18 +498,23 @@ footer {
     border-top: 1px solid black;
 }
 
+.project-img{
+    width: 100%;
+}
+
 .social-links {
     list-style: none;
     padding-left: 0px;
     font-size: 16px;
+    li {
+        display: inline-block;
+        float: left;
+        padding: 10px;
+    } 
     a {
         text-decoration: underline;
         &:hover{
             text-decoration: none;
         }
     }
-}
-
-.picture-strip {
-    height: 90px;
 }
