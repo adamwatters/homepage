@@ -1,108 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
 
-<head>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Adam Watters">
-    <meta name="author" content="Adam Watters">
-    <meta name="google-site-verification" content="6fqsqUXajuIU8pRhmuH_Sg_GsnYHD4LhYcyQt48GrTk" />
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    <title>Adam Watters</title>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-mixpanel.init("6818ab7518c1634dd576548e3ac285f6");</script><!-- end Mixpanel -->
-
-</head>
-
-<body id="page-top" class="index">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Adam Watters</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="section">
-                    <div class="profile-img_container">
-                        <img class="profile-img" src="img/profile.jpg">
-                    </div>
-                    <ul class="social-links">
-                        <li><a href="https://github.com/adamwatters">Github</a></li>
-                        <li><a href="AdamWatters-Resume-2016.pdf">Resume</a></li>
-                        <li><a href="https://www.instagram.com/adam.watters/">Instagram</a></li>
-                        <li><a href="http://www.instructables.com/member/adamwatters/">Instructables</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <p style="text-align:center; padding-top: 40px">Missions:</p>
-                <p>Find a company building things that will make the world a better place, help them build those things better and faster while making my coworkers happier people. Become a more knowledgable and efficient programmer.</p>
-                <p>Keep using my hands and make opportunities for others to do the same. Teach traditional <a href="http://brooklyntimberworks.com/">carpentry workshops in New York City</a>. Build a timber frame for a community garden in the city.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Some Projects</h3>
-            </div>
-        </div>
-            <div class="row">
-                <div class="col-sm-4">
-                <h4>Heartwood Library</h4>
-                <img class="project-img" src="img/heartwood-library.jpg">
-                <p>A Ruby-on-Rails Library Catalog application built for the traditional building school where I spent the summer of 2016 building Timber Frames. Check it out <a href="https://heartwoodlibrary.herokuapp.com/">here</a></p>
-            </div>
-            <div class="col-sm-4">
-                <h4>Arduino LED InfoTicker</h4>
-                <iframe width="100%" src="https://www.youtube.com/embed/fEjILtj-1cw" frameborder="0" allowfullscreen></iframe>
-                <p>Combined hardware hacking, data scraping, and API building to stream bus, train, Citibike, weather, and bitcoin data across an LED ticker. More about how it was built <a href="http://www.instructables.com/id/Web-Controlled-LED-Info-Ticker/">here</a>.</p>
-            </div>
-            <div class="col-sm-4">
-                <h4>InstructaBubbles</h4>
-                <img class="project-img" src="img/instructabubbles.png">
-                <p>An alternative UI for navigating Instructables.com content built with Node, D3.js, and the Instructables API available via Mashape.com. <a href="https://instructabubbles.herokuapp.com/">Try it out!</a></p>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">mixpanel.track("Page View");</script>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-</body>
-
-</html>
