@@ -7,7 +7,7 @@ title: About
 
 <br>
 
-I'm a web developer in New York City. After a summer stretching my brain doing [traditional carpentry](https://www.instagram.com/adam.watters/), I'm back in the internet game and looking to join a team building something ambitious and inspiring.
+I'm a web developer in New York City. After a summer stretching my brain doing [traditional carpentry](https://www.instagram.com/adam.watters/), I'm back in the internet game and looking to join a team building something ambitious.
 
 I worked at [TheLadders](https://www.theladders.com/) and [HealthKick](https://www.health-kick.com/). Before that I spent a few months at [The Recurse Center](https://www.recurse.com/) writing a ton of Javascript, mostly in the form of web apps and in-browser games. These days I'm focusing on expanding my skills into the backend building with Rails.
 

@@ -11,7 +11,7 @@
 
   <title>
     
-      Adam Watters &middot; Web Development and Everything Else
+      Databases Basics &middot; Adam Watters
     
   </title>
 
@@ -90,18 +90,10 @@ mixpanel.init("6818ab7518c1634dd576548e3ac285f6");</script><!-- end Mixpanel -->
       </div>
 
       <div class="container content">
-        <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/10/30/database-basics/">
-        Databases Basics
-      </a>
-    </h1>
-
-    <span class="post-date">30 Oct 2016</span>
-
-    <h3 id="an-imaginary-interview-about-databases">An Imaginary Interview about Databases</h3>
+        <div class="post">
+  <h1 class="post-title">Databases Basics</h1>
+  <span class="post-date">30 Oct 2016</span>
+  <h3 id="an-imaginary-interview-about-databases">An Imaginary Interview about Databases</h3>
 
 <p><em>Q: Tell me what you know about Databases…</em></p>
 
@@ -151,69 +143,23 @@ mixpanel.init("6818ab7518c1634dd576548e3ac285f6");</script><!-- end Mixpanel -->
   </ol>
 </div>
 
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/10/16/cracking-the-balanced-brackets-problem/">
-        Cracking the Balanced Brackets Problem
-      </a>
-    </h1>
-
-    <span class="post-date">16 Oct 2016</span>
-
-    <h3 id="the-problem-determine-if-a-string-of-brackets-is-balanced">The Problem: Determine if a string of brackets is ‘balanced’</h3>
-
-<p>For example, “{([][])}” is balanced, “{{}(}” is not.</p>
-
-<p>My Solution.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">BRACKET_KEY</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"}"</span><span class="p">:</span> <span class="s2">"{"</span><span class="p">,</span>
-    <span class="s2">"]"</span><span class="p">:</span> <span class="s2">"["</span><span class="p">,</span>
-    <span class="s2">")"</span><span class="p">:</span> <span class="s2">"("</span> 
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">brackets</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">firstClosed</span> <span class="o">=</span> <span class="nx">brackets</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-        <span class="k">return</span> <span class="nx">e</span> <span class="o">===</span> <span class="s2">"]"</span> <span class="o">||</span> <span class="nx">e</span> <span class="o">===</span> <span class="s2">"}"</span> <span class="o">||</span> <span class="nx">e</span> <span class="o">===</span> <span class="s2">")"</span>
-    <span class="p">});</span>
-
-    <span class="kd">var</span> <span class="nx">closingBracketPresent</span> <span class="o">=</span> <span class="nx">firstClosed</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">closingBracketNotFirst</span> <span class="o">=</span> <span class="nx">firstClosed</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">;</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="nx">closingBracketPresent</span> <span class="o">&amp;&amp;</span> <span class="nx">closingBracketNotFirst</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">firstClosingType</span> <span class="o">=</span> <span class="nx">brackets</span><span class="p">[</span><span class="nx">firstClosed</span><span class="p">];</span>
-        <span class="kd">var</span> <span class="nx">matchingType</span> <span class="o">=</span> <span class="nx">BRACKET_KEY</span><span class="p">[</span><span class="nx">firstClosingType</span><span class="p">];</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">brackets</span><span class="p">[</span><span class="nx">firstClosed</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="nx">matchingType</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">left</span> <span class="o">=</span> <span class="nx">brackets</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nx">firstClosed</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-            <span class="kd">var</span> <span class="nx">right</span> <span class="o">=</span> <span class="nx">brackets</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">firstClosed</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-            <span class="kd">var</span> <span class="nx">bracketsMinusMatch</span> <span class="o">=</span> <span class="nx">left</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">right</span><span class="p">);</span>
-            <span class="k">return</span> <span class="nx">test</span><span class="p">(</span><span class="nx">bracketsMinusMatch</span><span class="p">)</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="kc">false</span>
-        <span class="p">}</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">brackets</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="kc">true</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="kc">false</span>
-    <span class="p">}</span>
-
-<span class="p">}</span></code></pre></figure>
-
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/10/16/cracking-the-balanced-brackets-problem/">
+            Cracking the Balanced Brackets Problem
+            <small>16 Oct 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
-
 
       </div>
     </div>
