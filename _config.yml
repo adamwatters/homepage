@@ -6,8 +6,8 @@ gems: [jekyll-paginate]
 
 # Setup
 title:               Adam Watters
-tagline:             'Web Development and Everything Else'
-description:         "I'm Adam Watters, a web developer. You can find me, <a href='https://github.com/adamwatters'>on Github</a>, <a href='https://www.instagram.com/adam.watters/'>on Instagram</a>, and <a href='http://www.instructables.com/member/adamwatters/'>on Instructables.</a>"
+tagline:             'Web Engineer'
+description:         "Adam Watters here. I build web apps. You can find me, <a href='https://github.com/adamwatters'>on Github</a>, <a href='https://www.instagram.com/adam.watters/'>on Instagram</a>, and <a href='http://www.instructables.com/member/adamwatters/'>on Instructables.</a>"
 url:                 http://adamwatters.nyc
 baseurl:             ''
 paginate:            5
