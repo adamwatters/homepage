@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Adam Watters</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2017-01-06T10:46:14-05:00</updated>
- <id>http://localhost:4000</id>
+ <link href="http://adamwatters.nyc/atom.xml" rel="self"/>
+ <link href="http://adamwatters.nyc/"/>
+ <updated>2017-01-06T10:50:11-05:00</updated>
+ <id>http://adamwatters.nyc</id>
  <author>
    <name>Adam Watters</name>
    <email>adamwatters11@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Databases Basics</title>
-   <link href="http://localhost:4000/2016/10/30/database-basics/"/>
+   <link href="http://adamwatters.nyc/2016/10/30/database-basics/"/>
    <updated>2016-10-30T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2016/10/30/database-basics</id>
+   <id>http://adamwatters.nyc/2016/10/30/database-basics</id>
    <content type="html">&lt;h3 id=&quot;an-imaginary-interview-about-databases&quot;&gt;An Imaginary Interview about Databases&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Q: Tell me what you know about Databases…&lt;/em&gt;&lt;/p&gt;
@@ -71,9 +71,9 @@
  
  <entry>
    <title>Cracking the Balanced Brackets Problem</title>
-   <link href="http://localhost:4000/2016/10/16/cracking-the-balanced-brackets-problem/"/>
+   <link href="http://adamwatters.nyc/2016/10/16/cracking-the-balanced-brackets-problem/"/>
    <updated>2016-10-16T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2016/10/16/cracking-the-balanced-brackets-problem</id>
+   <id>http://adamwatters.nyc/2016/10/16/cracking-the-balanced-brackets-problem</id>
    <content type="html">&lt;h3 id=&quot;the-problem-determine-if-a-string-of-brackets-is-balanced&quot;&gt;The Problem: Determine if a string of brackets is ‘balanced’&lt;/h3&gt;
 
 &lt;p&gt;For example, “{([][])}” is balanced, “{{}(}” is not.&lt;/p&gt;

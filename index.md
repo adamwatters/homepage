@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: About
 ---
 
 I'm a web engineer in New York City. Currently I'm hacking on [Picaday](https://samepiceveryday.herokuapp.com/) while keeping an eye out for opportunities to join teams working on ambitious projects. I also like to [build things IRL](https://www.instagram.com/adam.watters/) and write stories.
