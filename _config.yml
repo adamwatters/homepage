@@ -2,7 +2,6 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-gems: [jekyll-paginate]
 
 # Setup
 title:               Adam Watters
@@ -10,7 +9,6 @@ tagline:             'Web Engineer'
 description:         "Adam Watters here. I build web apps. You can find me, <a href='https://github.com/adamwatters'>on Github</a>, <a href='https://www.instagram.com/adam.watters/'>on Instagram</a>, and <a href='http://www.instructables.com/member/adamwatters/'>on Instructables.</a>"
 url:                 http://adamwatters.nyc
 baseurl:             ''
-paginate:            5
 
 # About/contact
 author:

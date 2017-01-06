@@ -1,9 +1,9 @@
 ---
-layout: page
-title: About
+layout: default
+title: Home
 ---
 
-I'm a web engineer in New York City. Currently I'm working on [Picaday](https://samepiceveryday.herokuapp.com/) and job hunting. I also like to [build things IRL](https://www.instagram.com/adam.watters/) and write stories.
+I'm a web engineer in New York City. Currently I'm hacking on [Picaday](https://samepiceveryday.herokuapp.com/) while keeping an eye out for opportunities to join teams working on ambitious projects. I also like to [build things IRL](https://www.instagram.com/adam.watters/) and write stories.
 
 I worked at [TheLadders](https://www.theladders.com/) and [HealthKick](https://www.health-kick.com/). Before that I spent a few months at [The Recurse Center](https://www.recurse.com/) writing a ton of Javascript, mostly in the form of web apps and in-browser games.
 
