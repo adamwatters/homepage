@@ -11,11 +11,6 @@ I worked at [TheLadders](https://www.theladders.com/) and [HealthKick](https://w
 
 ## Some things I've built...
 
-### Picaday
-
-<img class="project-img" src="/public/img/picaday.png">
-<p>An app for uploading pictures of the same thing every day (e.g. your face) and stiching them together to see change over time (e.g. a beard growing out of your face). The technical goal is to build an in-browser app that feels as seemless as a native app. The broader goal is to build something complete strangers will use and love. <a href="https://picaday.club/">Try it out for yourself</a>.</p>
-
 ### Heartwood Library
 
 <img class="project-img" src="/public/img/heartwood-library.jpg">
