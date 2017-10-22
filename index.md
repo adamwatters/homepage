@@ -5,7 +5,7 @@ title: About
 
 Frontend Developer in New York. I also like to [make](http://www.instructables.com/member/adamwatters/) and [build](https://www.instagram.com/adam.watters/) things IRL.
 
-I worked at [TheLadders](https://www.theladders.com/) and [HealthKick](https://www.health-kick.com/). Before that I spent a few months at [The Recurse Center](https://www.recurse.com/) writing a ton of Javascript, mostly in the form of web apps and in-browser games.
+Currently building websites at [Ideawork Studios] (https://www.ideawork.com/).
 
 <br>
 
