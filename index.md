@@ -5,7 +5,7 @@ title: About
 
 Frontend Developer in New York. I also like to [make](http://www.instructables.com/member/adamwatters/) and [build](https://www.instagram.com/adam.watters/) things IRL.
 
-Currently building websites at [Ideawork Studios] (https://www.ideawork.com/).
+Currently building websites at [Ideawork Studios](https://www.ideawork.com/).
 
 <br>
 
