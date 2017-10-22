@@ -7,9 +7,7 @@ Frontend Developer in New York. I also like to [make](http://www.instructables.c
 
 Currently building websites at [Ideawork Studios](https://www.ideawork.com/).
 
-<br>
-
-## Some things I've built...
+## Past Projects
 
 ### Heartwood Library
 
