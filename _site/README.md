@@ -1,1 +1,0 @@
-# The one true homepage of Adam Watters
