@@ -12,6 +12,13 @@ const SecondPage = () => (
     <a
       target="_blank"
       rel="noopener noreferrer"
+      href="https://github.com/adamwatters"
+    >
+      Github
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
       href="https://www.instagram.com/adam.watters/?hl=en"
     >
       Instagram
@@ -19,9 +26,9 @@ const SecondPage = () => (
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href="https://github.com/adamwatters"
+      href="https://medium.com/@adamwatters11"
     >
-      Github
+      Medium
     </a>
   </Layout>
 )
