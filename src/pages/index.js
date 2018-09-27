@@ -7,7 +7,7 @@ import girlanddog from '../images/girlanddog.png'
 import joe from '../images/joepearl.png'
 import me from '../images/me.png'
 import kiss from '../images/kissing.png'
-import links from '../images/links.png'
+import hamburger from '../images/hamburger.png'
 import { Link } from 'gatsby'
 import './index.css'
 
@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Layout>
     <Link to="/links">
       {' '}
-      <img className="links-image" src={links} alt="links" />
+      <img className="links-image" src={hamburger} alt="hamburger" />
     </Link>
     <img className="nametag-image" src={nametag} alt="adam watters" />
     <img src={me} alt="me" />

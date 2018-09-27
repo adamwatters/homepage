@@ -13,6 +13,6 @@
 @media only screen and (max-width: 900px) {
   .nametag-image {
     align-self: start;
-    width: 60%;
+    width: 100px;
   }
 }
