@@ -1,4 +1,5 @@
 import React from 'react'
+import Hamburger from '../components/hamburger'
 import Layout from '../components/layout'
 import nametag from '../images/nametag.png'
 import pizza from '../images/pizza.png'
@@ -8,17 +9,12 @@ import joe from '../images/joepearl.png'
 import me from '../images/me.png'
 import kiss from '../images/kissing.png'
 import bobby from '../images/bobby.png'
-import hamburger from '../images/hamburger.png'
 import boots from '../images/boots.png'
-import { Link } from 'gatsby'
 import './index.css'
 
-const IndexPage = () => (
+const IndexPage = ({ location }) => (
   <Layout>
-    <Link to="/links">
-      {' '}
-      <img className="links-image" src={hamburger} alt="hamburger" />
-    </Link>
+    <Hamburger className="links-image" originPathname={location.pathname} />
     <img className="nametag-image" src={nametag} alt="adam watters" />
     <img src={me} alt="me" />
     <img src={kiss} alt="kiss" />
