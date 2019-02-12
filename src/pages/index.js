@@ -10,10 +10,12 @@ import me from '../images/me.png'
 import kiss from '../images/kissing.png'
 import bobby from '../images/bobby.png'
 import boots from '../images/boots.png'
+import GlobalStyle from '../components/globalStyle'
 import './index.css'
 
 const IndexPage = ({ location }) => (
   <Layout>
+    <GlobalStyle />
     <Hamburger className="links-image" originPathname={location.pathname} />
     <img className="nametag-image" src={nametag} alt="adam watters" />
     <img src={me} alt="me" />

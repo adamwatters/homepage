@@ -10,6 +10,7 @@ import blueblood from '../images/blueblood.png'
 import work from '../images/computer.png'
 import styled from '@emotion/styled'
 import Hamburger from '../components/hamburger'
+import GlobalStyle from '../components/globalStyle'
 import { Link } from 'gatsby'
 
 const Work = styled.img`
@@ -98,6 +99,7 @@ const StyledHamburger = styled(Hamburger)`
 
 const PortfolioPage = ({ location }) => (
   <>
+    <GlobalStyle />
     <HeaderContainer>
       <HeaderContent>
         <LinkTitle to="/">Adam Watters</LinkTitle>
@@ -106,8 +108,8 @@ const PortfolioPage = ({ location }) => (
     </HeaderContainer>
     <WorkPageContainer>
       <Paragraph>
-        <Nametag src={nametag} alt="adam watters" />I am a technically
-        sophisticated creator with deep experience writing code for the web.
+        <Nametag src={nametag} alt="adam watters" />
+        I'm a creative programmer with deep experience writing code for the web.
         I've contributed as a full stack developer at a startup, as a lead
         developer at a digital agency, and as an independent contractor.
       </Paragraph>

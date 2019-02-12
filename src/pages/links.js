@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import GlobalStyle from '../components/globalStyle'
 
 const SecondPage = ({ location }) => {
   const originPathname = location.state && location.state.originPathname
   return (
     <Layout>
+      <GlobalStyle />
       {originPathname && (
         <Link style={{ paddingTop: '20px' }} to={originPathname}>
           {`go back`}
