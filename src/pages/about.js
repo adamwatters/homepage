@@ -44,6 +44,7 @@ const WorkPageContainer = styled.div`
 const Paragraph = styled.div`
   max-width: 800px;
   margin-bottom: 16px;
+  width: 100%;
 `
 const Images = styled.div`
   max-width: 800px;
@@ -240,23 +241,7 @@ const PortfolioPage = ({ location }) => (
         applications, and developed a working knowledge of the architecture and
         protocols of the internet.
       </Paragraph>
-      <Paragraph>
-        <img
-          style={{
-            float: 'right',
-            height: 120,
-            marginTop: 4,
-            marginRight: 16,
-            marginBottom: 0,
-            opactiy: 0.5,
-          }}
-          src={bladejump}
-          alt="bladejump"
-        />
-        Outside of my life as a programmer, I've worked as carpenter, a high
-        school shop and technology instructor, and an ESL teacher. I'm a
-        marathon runner and an avid rollerblader.
-      </Paragraph>
+      <Paragraph>Update Feb 2019</Paragraph>
     </WorkPageContainer>
   </>
 )
