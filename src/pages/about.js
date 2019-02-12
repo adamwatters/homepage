@@ -254,8 +254,8 @@ const PortfolioPage = ({ location }) => (
           alt="bladejump"
         />
         Outside of my life as a programmer, I've worked as carpenter, a high
-        school shop and technology instructor, and an ESL teacher. I'm a runner
-        (I ran three marathons in 2018) and an avid rollerblader.
+        school shop and technology instructor, and an ESL teacher. I'm a
+        marathon runner and an avid rollerblader.
       </Paragraph>
     </WorkPageContainer>
   </>
