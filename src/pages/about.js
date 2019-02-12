@@ -1,6 +1,5 @@
 import React from 'react'
 import snake from '../images/snake.gif'
-import bladejump from '../images/bladejump.png'
 import itzana from '../images/itzana.png'
 import publicHotel from '../images/public.png'
 import siren from '../images/siren.png'
