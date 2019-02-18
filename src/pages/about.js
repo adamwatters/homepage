@@ -110,7 +110,7 @@ const PortfolioPage = ({ location }) => (
       <Paragraph>
         <Nametag src={nametag} alt="adam watters" />
         I'm a creative programmer with deep experience writing code for the web.
-        I've contributed as a full stack developer at a startup, as a lead
+        I've contributed as a full stack engineer at a startup, as a lead
         developer at a digital agency, and as an independent contractor.
       </Paragraph>
       <Paragraph>
