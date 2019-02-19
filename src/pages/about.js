@@ -109,9 +109,9 @@ const PortfolioPage = ({ location }) => (
     <WorkPageContainer>
       <Paragraph>
         <Nametag src={nametag} alt="adam watters" />
-        I'm a creative programmer with deep experience writing code for the web.
-        I've contributed as a full stack engineer at a startup, as a lead
-        developer at a digital agency, and as an independent contractor.
+        I'm a creative engineer with deep experience writing code for the web.
+        I've contributed as a full stack developer at a startup, as a frontend lead
+        at a digital agency, and as an independent contractor.
       </Paragraph>
       <Paragraph>
         <Work src={work} alt={work} />
