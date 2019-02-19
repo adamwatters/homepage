@@ -105,6 +105,7 @@ const PortfolioLink = ({ url, src, alt }) => {
     </a>
   )
 }
+
 const PortfolioPage = ({ location }) => (
   <>
     <GlobalStyle />
@@ -115,41 +116,143 @@ const PortfolioPage = ({ location }) => (
       </HeaderContent>
     </HeaderContainer>
     <WorkPageContainer>
+      <h1>
+        Hey there, Oddball{' '}
+        <span aria-label="img" role="img">
+          👋
+        </span>
+      </h1>
       <Paragraph>
         <Nametag src={nametag} alt="adam watters" />
-        I'm a creative engineer with deep experience writing code for the web.
-        I've contributed as a full stack developer at a startup, as a frontend
-        lead at a digital agency, and as an independent contractor.
+        I'm an engineer with deep experience writing code for the web. React is
+        my bread and butter, and I know my way around Rails. I think I'd be a
+        great fit to join your team as a Senior Front End Engineer.
       </Paragraph>
       <Paragraph>
         <Work src={work} alt={work} />
-        Some of my recent independent projects have included creating a business
-        facing dashboard for a{' '}
-        <a
-          href="https://www.myalice.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          startup making internet connected heating oil tank gauges
-        </a>{' '}
-        and devising a bit of internet trickery to{' '}
-        <a
-          href="https://www.youtube.com/watch?v=vexTDlTY6MY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          help a mentalist pull of an illusion on Penn and Teller Fool Us
-        </a>
-        .<br />
+        Here are a few things in the job description and on Oddball.io that
+        caught my eye and made me extra interested in this role:
         <br />
-        At{' '}
-        <a href="https://www.youtube.com/watch?v=vexTDlTY6MY">
-          Ideawork Studio
-        </a>{' '}
-        I led a team of five developers in the implemention of web designs,
-        mostly for clients in the hotel and restuarant businesses. While there I
-        increased development efficiency by automating builds, creating reusable
-        components, standardizing processes, and updating infastructure.
+        <br />
+        <ul style={{ marginBottom: '0' }}>
+          <li>
+            {' '}
+            The blog! In particular, reading the series on{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://blog.oddball.io/rails-with-react-one-repo-a46df5673f41"
+            >
+              Rails with React
+            </a>{' '}
+            gave me clear understanding of the stack I'd be working with
+          </li>
+          <li>
+            {' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://blog.oddball.io/what-does-it-mean-to-be-a-senior-dev-364e10285ad7"
+            >
+              This thoughtful post
+            </a>{' '}
+            helped me ask myself whether I'm "Senior". By Rob's criteria - I'd
+            say I am.
+          </li>
+          <li>
+            The phrases "improve the daily lives of millions of people" in the
+            job posting aligns with my intention to be a people focused engineer
+          </li>
+          <li style={{ marginBottom: '0' }}>
+            From the{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://oddball.io/about"
+            >
+              team bios
+            </a>{' '}
+            I get the sense that your team is made up of well rounded
+            individuals with a range of interests. I see a bunch of musicians, a
+            handful of chefs, and at least one stand up comedian. Over the past
+            five years I've moved back and forth between full time web
+            programming and working as a traditional carpentry. I'm seeking a
+            position where I can strike a more stable balance between my
+            interests, and the team at Oddball seems to be doing exactly that!
+          </li>
+        </ul>
+      </Paragraph>
+      <Paragraph>
+        Back to my experience and qualifications. Here's some of what I've
+        worked on...
+      </Paragraph>
+      <Paragraph>
+        <ul style={{ marginBottom: '0' }}>
+          <li>
+            {' '}
+            <a
+              href="https://github.com/stefanjudis/netlify-menubar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              An open source Electron App for managing sites deployed to Netlify
+            </a>
+          </li>
+          <li>
+            A React/Redux based dashboard to interact with a Serverless/DynamoDB
+            backend for{' '}
+            <a
+              href="https://www.myalice.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              startup making internet connected heating oil tank gauges
+            </a>{' '}
+          </li>
+          <li>
+            A bit of internet trickey to help a mentalist{' '}
+            <a
+              href="https://www.youtube.com/watch?v=vexTDlTY6MY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              pull of an illusion on Penn and Teller Fool Us.
+            </a>{' '}
+            I used React to build pixel perfect replication of the iOS contacts
+            app in the browser.
+          </li>
+          <li>
+            <a
+              href="https://heartwoodlibrary.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              A library application in Rails
+            </a>{' '}
+            for the homebuilding school where I spent a summer as an apprentice
+            carpenter
+          </li>
+        </ul>
+        <Paragraph>
+          My last full time position as an Engineer was with Ideawork Studios
+          from Feb 2017 to April 2018. While there I...
+        </Paragraph>
+        <Paragraph>
+          <ul style={{ marginBottom: '0' }}>
+            <li>
+              Lead a team of five developers building React powered websites for
+              hotels and restaurants.
+            </li>
+            <li>
+              Built reusable components, starter boilerplates, and tools to help
+              my teammates
+            </li>
+            <li>
+              Updated and maintained a proprietary CMS with an Express backend
+              and React/Redux UI
+            </li>
+          </ul>
+        </Paragraph>
       </Paragraph>
       <Images>
         <div
@@ -236,10 +339,16 @@ const PortfolioPage = ({ location }) => (
           building games from scratch
         </a>
         , implemented data structures and algorithms, created some web
-        applications, and developed a working knowledge of the architecture and
+        applications, and developed an understanding of the architecture and
         protocols of the internet.
       </Paragraph>
-      <Paragraph>Update Feb 2019</Paragraph>
+      <Paragraph>
+        And that's my story, so far! Thanks for reading - can't wait to talk
+        with someone from the team about how I could contribute at Oddball{' '}
+        <span aria-label="img" role="img">
+          🙌
+        </span>
+      </Paragraph>
     </WorkPageContainer>
   </>
 )
