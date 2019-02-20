@@ -145,7 +145,7 @@ const PortfolioPage = ({ location }) => (
             >
               Rails with React
             </a>{' '}
-            gave me clear understanding of the stack I'd be working with
+            gave me a clear understanding of the stack I'd be working with
           </li>
           <li>
             {' '}
@@ -160,7 +160,7 @@ const PortfolioPage = ({ location }) => (
             say I am.
           </li>
           <li>
-            The phrases "improve the daily lives of millions of people" in the
+            The phrase "improve the daily lives of millions of people" in the
             job posting aligns with my intention to be a people focused engineer
           </li>
           <li style={{ marginBottom: '0' }}>
@@ -206,7 +206,7 @@ const PortfolioPage = ({ location }) => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              startup making internet connected heating oil tank gauges
+              a startup making internet connected heating oil tank gauges
             </a>{' '}
           </li>
           <li>
@@ -218,7 +218,7 @@ const PortfolioPage = ({ location }) => (
             >
               pull of an illusion on Penn and Teller Fool Us.
             </a>{' '}
-            I used React to build pixel perfect replication of the iOS contacts
+            I used React to build a pixel perfect replication of the iOS contacts
             app in the browser.
           </li>
           <li>
