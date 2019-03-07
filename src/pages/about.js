@@ -117,9 +117,9 @@ const PortfolioPage = ({ location }) => (
     <WorkPageContainer>
       <Paragraph>
         <Nametag src={nametag} alt="adam watters" />
-        I'm a creative engineer with deep experience writing code for the web.
-        I've contributed as a full stack developer at a startup, as a frontend
-        lead at a digital agency, and as an independent contractor.
+        I'm an engineer with deep experience writing code for the web. I've
+        contributed as a full stack developer at a startup, as a frontend lead
+        at a digital agency, and as an independent contractor.
       </Paragraph>
       <Paragraph>
         <Work src={work} alt={work} />
@@ -146,8 +146,8 @@ const PortfolioPage = ({ location }) => (
         <a href="https://www.youtube.com/watch?v=vexTDlTY6MY">
           Ideawork Studio
         </a>{' '}
-        I led a team of five developers in the implemention of web designs,
-        mostly for clients in the hotel and restuarant businesses. While there I
+        I led a team of developers in the implemention of web designs, mostly
+        for clients in the hotel and restuarant businesses. While there I
         increased development efficiency by automating builds, creating reusable
         components, standardizing processes, and updating infastructure.
       </Paragraph>
@@ -224,7 +224,7 @@ const PortfolioPage = ({ location }) => (
           src={snake}
           alt="snake"
         />
-        Before I started writing code professionally, I spent three months at{' '}
+        In 2014 I spent three months at{' '}
         <a href="https://www.recurse.com/">The Recurse Center</a> on a self
         directed educational journey through the world of computing. I learned
         the ins-and-outs of Javascript by{' '}
