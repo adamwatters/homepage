@@ -1,4 +1,4 @@
-## 🌊🌊 adamwatters.nyc 🌊🌊
+## 🏡 adamwatters.nyc
 
 > my homepage
 
