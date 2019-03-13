@@ -13,9 +13,9 @@ const SecondPage = ({ location }) => {
           {`go back`}
         </Link>
       )}
-      {originPathname !== '/about' && originPathname !== '/hey-there-oddball' && (
-        <Link style={{ paddingTop: '20px' }} to="/about">
-          {`about`}
+      {originPathname !== '/drawings' && (
+        <Link style={{ paddingTop: '20px' }} to="/drawings">
+          {`drawings`}
         </Link>
       )}
       {originPathname !== '/' && (
