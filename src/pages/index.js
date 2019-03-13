@@ -27,7 +27,7 @@ const Nametag = styled.img`
   width: 140px;
   margin-bottom: 0;
   margin-right: 10px;
-  float: left;
+  float: right;
 `
 
 const WorkPageContainer = styled.div`
