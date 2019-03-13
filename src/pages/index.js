@@ -16,6 +16,8 @@ import { Link } from 'gatsby'
 const Work = styled.img`
   width: 220px;
   float: right;
+  margin-left: 10px;
+  margin-bottom: 0;
 `
 
 const Img = styled.img`
@@ -117,33 +119,42 @@ const Home = ({ location }) => (
     </HeaderContainer>
     <WorkPageContainer>
       <Paragraph>
-        <Nametag src={nametag} alt="adam watters" />
         <h3>
-          I'm an engineer/designer with deep experience writing code for the
+          Creative Engineer with deep experience writing code for the
           web.
         </h3>
       </Paragraph>
       <Paragraph>
+        <h4>Recent Doings</h4>
+        <Work src={work} alt={work} />
         <ul style={{ marginBottom: '0' }}>
-          <li>
+        <li>
             {' '}
             <a
-              href="https://github.com/stefanjudis/netlify-menubar"
+              href="https://ukiyo-e.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              An open source Electron App for managing sites deployed to Netlify
+              An Algolia powered search app for exploring the Metropolitan Museum's collection of Japanese woodblock prints.
             </a>
           </li>
           <li>
-            A React/Redux based dashboard to interact with a Serverless/DynamoDB
-            backend for{' '}
+            {' '}
+            <a
+              href="https://github.com/stefanjudis/netlify-menubar/pull/14"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contributing to an open source Electron App for managing sites deployed to Netlify
+            </a>
+          </li>
+          <li>
             <a
               href="https://www.myalice.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              a startup making internet connected heating oil tank gauges
+             A React/Redux based dashboard for a startup making internet connected heating oil tank gauges
             </a>{' '}
           </li>
           <li>
@@ -159,22 +170,30 @@ const Home = ({ location }) => (
             contacts app in the browser.
           </li>
           <li>
+            Non-Technical: helped build{' '}
             <a
-              href="https://heartwoodlibrary.herokuapp.com/"
+              href="https://timberhomesllc.com/timberhomes-completes-class-of-1978-bunkhouse/"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              A library application in Rails
-            </a>{' '}
-            for the homebuilding school where I spent a summer as an apprentice
-            carpenter
+            >a beautiful bunkhouse in the White Mountains of New Hampshire
+            </a>{' '}and{' '}
+            <a
+              href="https://habitatnyc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >affordable housing in New York City.
+            </a>
           </li>
         </ul>
         <Paragraph>
-          My last full time position as an Engineer was with Ideawork Studios
-          from Feb 2017 to April 2018. While there I...
-        </Paragraph>
-        <Paragraph>
+          <h4 style={{marginTop: '30px'}}>
+            <a
+              href="https://www.ideawork.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             Ideawork Studios
+            </a>{' '}- Feb 2017 to April 2018.</h4>
           <ul style={{ marginBottom: '0' }}>
             <li>
               Lead a team of five developers building React powered websites for
@@ -239,178 +258,123 @@ const Home = ({ location }) => (
         />
       </Images>
       <Paragraph>
-        Prior to my work at Ideawork I worked at{' '}
-        <a href="https://www.theladders.com/">TheLadders</a> where I split my
-        time between developing{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.theladders.com/resume-reviewer"
-        >
-          new tools for job seekers
-        </a>
-        , improving the search experience, and the core web app.
-      </Paragraph>
-      <Paragraph>
-        <img
+        
+        <h4>I spent most of 2016 learning{` `}<a
+              href="https://www.heartwoodschool.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              woodworking and traditional carpentry
+            </a>, but I completed a few technical projects</h4>
+            <img
           style={{
-            float: 'left',
-            height: 120,
-            marginTop: 4,
-            marginRight: 16,
+            float: 'right',
+            height: 160,
+            marginTop: 0,
+            marginLeft: 36,
             marginBottom: 0,
             opactiy: 0.5,
           }}
           src={snake}
           alt="snake"
         />
-        Before I started writing code professionally, I spent three months at{' '}
-        <a href="https://www.recurse.com/">The Recurse Center</a> on a self
-        directed educational journey through the world of computing. I learned
-        the ins-and-outs of Javascript by{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://rawgit.com/adamwatters/snake2/master/index.html"
-        >
-          building games from scratch
-        </a>
-        , implemented data structures and algorithms, created some web
-        applications, and developed an understanding of the architecture and
-        protocols of the internet.
+        <ul style={{ marginBottom: '0' }}>
+            <li>
+            <a
+              href="https://heartwoodlibrary.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Built a Rails powered library catalogue for the craft school where I was living and working
+            </a>
+            </li>
+            <li>
+            <a
+              href="https://www.health-kick.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            Helped launch Healthkick - an incentivized marketplace of branded fitness and wellness offerings.
+            </a>
+            </li>
+            <li>
+            <a
+              href="https://pixelsnake.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            Wrote a pretty slick (IMO) implementation of Snake for the browser
+            </a>
+            </li>
+          </ul>
       </Paragraph>
       <Paragraph>
-        And that's my story, so far! Thanks for reading - can't wait to talk
-        with someone from the team about how I could contribute at Oddball{' '}
-        <span aria-label="img" role="img">
-          🙌
-        </span>
-      </Paragraph>
-      <Paragraph>
-        <Nametag src={nametag} alt="adam watters" />
-        I'm an engineer with deep experience writing code for the web. I've
-        contributed as a full stack developer at a startup, as a frontend lead
-        at a digital agency, and as an independent contractor.
-      </Paragraph>
-      <Paragraph>
-        <Work src={work} alt={work} />
-        Some of my recent independent projects have included creating a business
-        facing dashboard for a{' '}
-        <a
-          href="https://www.myalice.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          startup making internet connected heating oil tank gauges
-        </a>{' '}
-        and devising a bit of internet trickery to{' '}
-        <a
-          href="https://www.youtube.com/watch?v=vexTDlTY6MY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          help a mentalist pull of an illusion on Penn and Teller Fool Us
-        </a>
-        .<br />
-        <br />
-        At{' '}
-        <a href="https://www.youtube.com/watch?v=vexTDlTY6MY">
-          Ideawork Studio
-        </a>{' '}
-        I led a team of developers in the implemention of web designs, mostly
-        for clients in the hotel and restuarant businesses. While there I
-        increased development efficiency by automating builds, creating reusable
-        components, standardizing processes, and updating infastructure.
-      </Paragraph>
-      <Images>
-        <div
-          style={{
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            textAlign: 'center',
-            top: 6,
-            fontSize: 12,
-            color: 'grey',
-          }}
-        >
-          A sampling of sites we built during my time at Ideawork
-        </div>
-        <PortfolioLink
-          src={bernierobbins}
-          url={'https://www.bernierobbins.com/men/watches?PRICE=1000-2499'}
-          alt={'bernierobbins'}
-        />
-        <PortfolioLink
-          src={siren}
-          url={'http://www.sirenbyrw.com/'}
-          alt={'siren'}
-        />
-        <PortfolioLink
-          src={darcy}
-          url={'https://www.thedarcyhotel.com/neighborhood'}
-          alt={'darcy'}
-        />
-        <PortfolioLink
-          src={itzana}
-          url={
-            'http://www.itzanabelize.com/the-resort/overview/destination/resort/ceviche-bar'
-          }
-          alt={'itzana'}
-        />
-        <PortfolioLink
-          src={blueblood}
-          url={'http://www.bluebloodsteakhouse.com/team/hospitality/mixologist'}
-          alt={'blueblood'}
-        />
-        <PortfolioLink
-          src={publicHotel}
-          url={'https://www.publichotels.com/eat-and-drink'}
-          alt={'publicHotel'}
-        />
-      </Images>
-      <Paragraph>
-        Prior to my work at Ideawork I worked at{' '}
-        <a href="https://www.theladders.com/">TheLadders</a> where I split my
-        time between developing{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.theladders.com/resume-reviewer"
-        >
-          new tools for job seekers
-        </a>
-        , improving the search experience, and the core web app.
-      </Paragraph>
-      <Paragraph>
-        <img
-          style={{
-            float: 'left',
-            height: 120,
-            marginTop: 4,
-            marginRight: 16,
-            marginBottom: 0,
-            opactiy: 0.5,
-          }}
-          src={snake}
-          alt="snake"
-        />
-        In 2014 I spent three months at{' '}
-        <a href="https://www.recurse.com/">The Recurse Center</a> on a self
-        directed educational journey through the world of computing. I learned
-        the ins-and-outs of Javascript by{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://rawgit.com/adamwatters/snake2/master/index.html"
-        >
-          building games from scratch
-        </a>
-        , implemented data structures and algorithms, created some web
-        applications, and developed a working knowledge of the architecture and
-        protocols of the internet.
-      </Paragraph>
-      <Paragraph>Update Feb 2019</Paragraph>
+          <h4 style={{marginTop: '20px'}}>
+            <a
+              href="https://www.theladders.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             TheLadders.com
+            </a>{' '}- Dec 2014 to Dec 2015</h4>
+          <ul style={{ marginBottom: '0' }}>
+            <li>
+            <a
+              href="https://www.theladders.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             Built tools for creating and reviewing resumes
+            </a>
+            </li>
+            <li>
+            <a
+              href="https://www.theladders.com/jobs/new-york-ny-jobs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             Developed new SEO optimized job search result pages
+            </a>
+            </li>
+            <li>
+              Updated and maintained an existing Backbone.js SPA
+            </li>
+          </ul>
+        </Paragraph>
+        <Paragraph>
+          <h4 style={{marginTop: '20px'}}>
+            <a
+              href="https://www.recurse.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             The Recurse Center
+            </a>{' '}(like a writer's retreat, but for programmers) - Fall 2014</h4>
+          <ul style={{ marginBottom: '0' }}>
+            <li>
+             Pair programmed in a diverse community full of engineers, academics, and artists
+            </li>
+            <li>
+            <a
+              href="https://javascriptsorts.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             Learned about algorithms by implementing them
+            </a>
+            </li>
+            <li>
+              Started to understand how the internet works
+            </li>
+          </ul>
+        </Paragraph>
+        <Paragraph>
+          <h3 style={{marginTop: '20px'}}>That's all - say hi at             <a
+              href="mailto:adamwatters11@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >adamwatters11@gmail.com</a></h3>
+        </Paragraph>
     </WorkPageContainer>
   </>
 )
