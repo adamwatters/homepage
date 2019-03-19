@@ -9,15 +9,14 @@ const SecondPage = ({ location }) => {
     <Layout>
       <GlobalStyle />
       {originPathname && (
-        <Link style={{ paddingTop: '20px' }} to={originPathname}>
+        <Link
+          style={{ paddingBottom: '20px', paddingTop: '20px' }}
+          to={originPathname}
+        >
           {`go back`}
         </Link>
       )}
-      {originPathname !== '/' && (
-        <Link style={{ paddingTop: '20px' }} to="/">
-          {`home`}
-        </Link>
-      )}
+      {originPathname !== '/' && <Link to="/">{`home`}</Link>}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -26,9 +25,7 @@ const SecondPage = ({ location }) => {
         github
       </a>
       {originPathname !== '/drawings' && (
-        <Link style={{ paddingTop: '20px' }} to="/drawings">
-          {`drawings`}
-        </Link>
+        <Link to="/drawings">{`drawings`}</Link>
       )}
       <a
         target="_blank"
