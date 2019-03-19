@@ -13,11 +13,6 @@ const SecondPage = ({ location }) => {
           {`go back`}
         </Link>
       )}
-      {originPathname !== '/drawings' && (
-        <Link style={{ paddingTop: '20px' }} to="/drawings">
-          {`drawings`}
-        </Link>
-      )}
       {originPathname !== '/' && (
         <Link style={{ paddingTop: '20px' }} to="/">
           {`home`}
@@ -30,6 +25,11 @@ const SecondPage = ({ location }) => {
       >
         github
       </a>
+      {originPathname !== '/drawings' && (
+        <Link style={{ paddingTop: '20px' }} to="/drawings">
+          {`drawings`}
+        </Link>
+      )}
       <a
         target="_blank"
         rel="noopener noreferrer"
