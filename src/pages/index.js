@@ -3,7 +3,6 @@ import snake from '../images/snake.gif'
 import itzana from '../images/itzana.png'
 import publicHotel from '../images/public.png'
 import siren from '../images/siren.png'
-import nametag from '../images/nametag.png'
 import bernierobbins from '../images/bernierobbins.png'
 import darcy from '../images/darcy.png'
 import blueblood from '../images/blueblood.png'
@@ -11,6 +10,7 @@ import work from '../images/computer.png'
 import styled from '@emotion/styled'
 import Hamburger from '../components/hamburger'
 import GlobalStyle from '../components/globalStyle'
+import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
 const Work = styled.img`
@@ -23,13 +23,6 @@ const Work = styled.img`
 const Img = styled.img`
   height: 120px;
   margin: 10px;
-`
-
-const Nametag = styled.img`
-  width: 140px;
-  margin-bottom: 0;
-  margin-right: 10px;
-  float: right;
 `
 
 const WorkPageContainer = styled.div`
@@ -107,7 +100,7 @@ const PortfolioLink = ({ url, src, alt }) => {
   )
 }
 const Home = ({ location }) => (
-  <>
+  <Layout>
     <GlobalStyle />
     <HeaderContainer>
       <HeaderContent>
@@ -120,22 +113,22 @@ const Home = ({ location }) => (
     <WorkPageContainer>
       <Paragraph>
         <h3>
-          Creative Engineer with deep experience writing code for the
-          web.
+          Creative Engineer with deep experience writing code for the web.
         </h3>
       </Paragraph>
       <Paragraph>
         <h4>Recent Doings</h4>
         <Work src={work} alt={work} />
         <ul style={{ marginBottom: '0' }}>
-        <li>
+          <li>
             {' '}
             <a
               href="https://ukiyo-e.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              An Algolia powered search app for exploring the Metropolitan Museum's collection of Japanese woodblock prints.
+              An Algolia powered search app for exploring the Metropolitan
+              Museum's collection of Japanese woodblock prints.
             </a>
           </li>
           <li>
@@ -145,7 +138,8 @@ const Home = ({ location }) => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Contributing to an open source Electron App for managing sites deployed to Netlify
+              Contributing to an open source Electron App for managing sites
+              deployed to Netlify
             </a>
           </li>
           <li>
@@ -154,7 +148,8 @@ const Home = ({ location }) => (
               target="_blank"
               rel="noopener noreferrer"
             >
-             A React/Redux based dashboard for a startup making internet connected heating oil tank gauges
+              A React/Redux based dashboard for a startup making internet
+              connected heating oil tank gauges
             </a>{' '}
           </li>
           <li>
@@ -175,25 +170,31 @@ const Home = ({ location }) => (
               href="https://timberhomesllc.com/timberhomes-completes-class-of-1978-bunkhouse/"
               target="_blank"
               rel="noopener noreferrer"
-            >a beautiful bunkhouse in the White Mountains of New Hampshire
-            </a>{' '}and{' '}
+            >
+              a beautiful bunkhouse in the White Mountains of New Hampshire
+            </a>{' '}
+            and{' '}
             <a
               href="https://habitatnyc.org/"
               target="_blank"
               rel="noopener noreferrer"
-            >affordable housing in New York City.
+            >
+              affordable housing in New York City.
             </a>
           </li>
         </ul>
         <Paragraph>
-          <h4 style={{marginTop: '30px'}}>
+          <h4 style={{ marginTop: '30px' }}>
+            Lead Developer at{' '}
             <a
               href="https://www.ideawork.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-             Ideawork Studios
-            </a>{' '}- Feb 2017 to April 2018.</h4>
+              Ideawork Studios
+            </a>{' '}
+            - Feb 2017 to April 2018.
+          </h4>
           <ul style={{ marginBottom: '0' }}>
             <li>
               Lead a team of five developers building React powered websites for
@@ -258,15 +259,18 @@ const Home = ({ location }) => (
         />
       </Images>
       <Paragraph>
-        
-        <h4>I spent most of 2016 learning{` `}<a
-              href="https://www.heartwoodschool.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              woodworking and traditional carpentry
-            </a>, but I completed a few technical projects</h4>
-            <img
+        <h4>
+          I spent most of 2016 learning{` `}
+          <a
+            href="https://www.heartwoodschool.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            woodworking and traditional carpentry
+          </a>
+          , but I completed a few technical projects
+        </h4>
+        <img
           style={{
             float: 'right',
             height: 160,
@@ -279,104 +283,113 @@ const Home = ({ location }) => (
           alt="snake"
         />
         <ul style={{ marginBottom: '0' }}>
-            <li>
+          <li>
             <a
               href="https://heartwoodlibrary.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Built a Rails powered library catalogue for the craft school where I was living and working
+              Built a Rails powered library catalogue for the craft school where
+              I was living and working
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a
               href="https://www.health-kick.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            Helped launch Healthkick - an incentivized marketplace of branded fitness and wellness offerings.
+              Helped launch Healthkick - an incentivized marketplace of branded
+              fitness and wellness offerings.
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a
               href="https://pixelsnake.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            Wrote a pretty slick (IMO) implementation of Snake for the browser
+              Wrote a pretty slick (IMO) implementation of Snake for the browser
             </a>
-            </li>
-          </ul>
+          </li>
+        </ul>
       </Paragraph>
       <Paragraph>
-          <h4 style={{marginTop: '20px'}}>
+        <h4 style={{ marginTop: '20px' }}>
+          Frontend Engineer at{' '}
+          <a
+            href="https://www.theladders.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TheLadders.com
+          </a>{' '}
+          - Dec 2014 to Dec 2015
+        </h4>
+        <ul style={{ marginBottom: '0' }}>
+          <li>
             <a
               href="https://www.theladders.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-             TheLadders.com
-            </a>{' '}- Dec 2014 to Dec 2015</h4>
-          <ul style={{ marginBottom: '0' }}>
-            <li>
-            <a
-              href="https://www.theladders.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-             Built tools for creating and reviewing resumes
+              Built tools for creating and reviewing resumes
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a
               href="https://www.theladders.com/jobs/new-york-ny-jobs"
               target="_blank"
               rel="noopener noreferrer"
             >
-             Developed new SEO optimized job search result pages
+              Developed new SEO optimized job search result pages
             </a>
-            </li>
-            <li>
-              Updated and maintained an existing Backbone.js SPA
-            </li>
-          </ul>
-        </Paragraph>
-        <Paragraph>
-          <h4 style={{marginTop: '20px'}}>
-            <a
-              href="https://www.recurse.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-             The Recurse Center
-            </a>{' '}(like a writer's retreat, but for programmers) - Fall 2014</h4>
-          <ul style={{ marginBottom: '0' }}>
-            <li>
-             Pair programmed in a diverse community full of engineers, academics, and artists
-            </li>
-            <li>
+          </li>
+          <li>Updated and maintained an existing Backbone.js SPA</li>
+        </ul>
+      </Paragraph>
+      <Paragraph>
+        <h4 style={{ marginTop: '20px' }}>
+          <a
+            href="https://www.recurse.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Recurse Center
+          </a>{' '}
+          (like a writer's retreat, but for programmers) - Fall 2014
+        </h4>
+        <ul style={{ marginBottom: '0' }}>
+          <li>
+            Pair programmed in a diverse community full of engineers, academics,
+            and artists
+          </li>
+          <li>
             <a
               href="https://javascriptsorts.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-             Learned about algorithms by implementing them
+              Learned about algorithms by implementing them
             </a>
-            </li>
-            <li>
-              Started to understand how the internet works
-            </li>
-          </ul>
-        </Paragraph>
-        <Paragraph>
-          <h3 style={{marginTop: '20px'}}>That's all - say hi at             <a
-              href="mailto:adamwatters11@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >adamwatters11@gmail.com</a></h3>
-        </Paragraph>
+          </li>
+          <li>Started to understand how the internet works</li>
+        </ul>
+      </Paragraph>
+      <Paragraph>
+        <h3 style={{ marginTop: '20px' }}>
+          That's all - say hi at{' '}
+          <a
+            href="mailto:adamwatters11@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            adamwatters11@gmail.com
+          </a>
+        </h3>
+      </Paragraph>
     </WorkPageContainer>
-  </>
+  </Layout>
 )
 
 export default Home
