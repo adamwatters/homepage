@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/adamwatters
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://adamwatters.nyc
+  * I am adamwatters (https://keybase.io/adamwatters) on keybase.
+  * I have a public key ASAd67aEZLvBAl2Py4DIBEdDdhmPxT5-un1Hk0iU02U81go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201debb68464bbc1025d8fcb80c804474376198fc53e7eba7d47934894d3653cd60a",
+      "host": "keybase.io",
+      "kid": "01201debb68464bbc1025d8fcb80c804474376198fc53e7eba7d47934894d3653cd60a",
+      "uid": "156e3c92cb285a136fae0522ea49bb19",
+      "username": "adamwatters"
+    },
+    "merkle_root": {
+      "ctime": 1553711256,
+      "hash": "62edd4834c5e0d7a36976239c51dc5c535b5fcd642fd724d817f4d8b5d47e9bf10b0e455d2d3a2bf163291bb7ecaba1431e9bb0812ad8c1bd68a58b22c524d93",
+      "hash_meta": "9154aa765497994bcf8f81bb897dab509a16a4d25ba52bed25a92a97b924baf4",
+      "seqno": 5036353
+    },
+    "service": {
+      "entropy": "4EbKBOqXCrTxTXFmm34OgKaR",
+      "hostname": "adamwatters.nyc",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1553711263,
+  "expire_in": 504576000,
+  "prev": "4b03c0db8dec01a1731411da9b8eb69f455f3fef9d207f83f8a3c021edd0a685",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgHeu2hGS7wQJdj8uAyARHQ3YZj8U+frp9R5NIlNNlPNYKp3BheWxvYWTESpcCB8QgSwPA243sAaFzFBHam462n0VfP++dIH+D+KPAIe3QpoXEIKdtdEjbonxWADABAM5aT9/NxFy1Teg4lHbjBtFsSfM9AgHCo3NpZ8RABFLiG1LqYNjlj2rihF4Uz2zjfSUpcOIqzAMfAtN4IF69dEfil7uc0I16pSGpvGiIe6k7NeI4VezsxbiPHs5iDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINEz/J9AB0dCsdSqMGNvtIRYEKi809XQsPcCRET7P4Rwo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adamwatters
+
+==================================================================
