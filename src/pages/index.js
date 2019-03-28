@@ -155,14 +155,14 @@ const Home = ({ location }) => (
           <li>
             A bit of internet trickey to help a mentalist{' '}
             <a
-              href="https://www.youtube.com/watch?v=vexTDlTY6MY"
+              href="https://www.youtube.com/watch?v=vexTDlTY6MY&t=41s"
               target="_blank"
               rel="noopener noreferrer"
             >
               pull of an illusion on Penn and Teller Fool Us.
             </a>{' '}
-            I used React to build a pixel perfect replication of the iOS
-            contacts app in the browser.
+            I used React to build a pixel perfect replica of the iOS contacts
+            app in the browser.
           </li>
           <li>
             Non-Technical: helped build{' '}
