@@ -285,7 +285,7 @@ const Home = ({ location }) => (
         <ul style={{ marginBottom: '0' }}>
           <li>
             <a
-              href="https://heartwoodlibrary.herokuapp.com/"
+              href="https://github.com/adamwatters/tiny_library"
               target="_blank"
               rel="noopener noreferrer"
             >
