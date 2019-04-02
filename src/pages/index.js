@@ -377,8 +377,14 @@ const Home = ({ location }) => (
         </ul>
       </Paragraph>
       <Paragraph>
+        If you need all this information in a more conventional package,{' '}
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          you can find my resume here.
+        </a>
+      </Paragraph>
+      <Paragraph>
         <h3 style={{ marginTop: '20px' }}>
-          That's all - say hi at{' '}
+          That is all. Say hi at{' '}
           <a
             href="mailto:adamwatters11@gmail.com"
             target="_blank"
@@ -386,7 +392,9 @@ const Home = ({ location }) => (
           >
             adamwatters11@gmail.com
           </a>
+          .
         </h3>
+        .
       </Paragraph>
     </WorkPageContainer>
   </Layout>
