@@ -5,18 +5,29 @@ import GlobalStyle from '../components/globalStyle'
 import { graphql } from 'gatsby'
 import './index.css'
 
+const ImgContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1500px;
+  @media (min-width: 600px) {
+    margin-top: 0px;
+  }
+`
+
 const Drawings = ({ location, data }) => {
   const images = data.allDropboxNode.edges.map(edge => {
     const { name } = edge.node.localFile
     const { src } = edge.node.localFile.childImageSharp.resize
     return <img src={src} alt={name} />
   })
-  console.log(images)
   return (
     <Layout>
       <GlobalStyle />
       <Hamburger className="links-image" originPathname={location.pathname} />
-      {images}
+      <ImgContainer>{images}</ImgContainer>
     </Layout>
   )
 }
@@ -29,7 +40,7 @@ export const query = graphql`
           localFile {
             name
             childImageSharp {
-              resize(width: 300) {
+              resize(width: 400) {
                 src
               }
             }
