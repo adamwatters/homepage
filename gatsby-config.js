@@ -27,5 +27,12 @@ module.exports = {
         trackingId: 'UA-134428657-1',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 }
