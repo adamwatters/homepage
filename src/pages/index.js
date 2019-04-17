@@ -14,10 +14,13 @@ import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
 const Work = styled.img`
-  width: 220px;
+  width: 100px;
   float: right;
   margin-left: 10px;
   margin-bottom: 0;
+  @media (min-width: 600px) {
+    width: 220px;
+  }
 `
 
 const Img = styled.img`
