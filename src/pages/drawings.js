@@ -3,6 +3,7 @@ import Hamburger from '../components/hamburger'
 import Layout from '../components/layout'
 import GlobalStyle from '../components/globalStyle'
 import { graphql } from 'gatsby'
+import styled from '@emotion/styled'
 import './index.css'
 
 const ImgContainer = styled.div`
