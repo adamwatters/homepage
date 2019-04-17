@@ -33,7 +33,6 @@ const Layout = ({ children }) => (
             alignItems: 'center',
             flexDirection: 'column',
             maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
           }}
         >

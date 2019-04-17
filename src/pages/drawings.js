@@ -8,13 +8,14 @@ import './index.css'
 
 const ImgContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 120px;
   width: 100%;
   max-width: 1500px;
   @media (min-width: 600px) {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 `
 
@@ -41,7 +42,7 @@ export const query = graphql`
           localFile {
             name
             childImageSharp {
-              resize(width: 400) {
+              resize(width: 320) {
                 src
               }
             }
