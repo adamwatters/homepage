@@ -1,32 +1,43 @@
 import React from 'react'
 import Hamburger from '../components/hamburger'
 import Layout from '../components/layout'
-import nametag from '../images/nametag.png'
-import pizza from '../images/pizza.png'
-import drew from '../images/drew.png'
-import girlanddog from '../images/girlanddog.png'
-import joe from '../images/joepearl.png'
-import me from '../images/me.png'
-import kiss from '../images/kissing.png'
-import bobby from '../images/bobby.png'
-import boots from '../images/boots.png'
 import GlobalStyle from '../components/globalStyle'
+import { graphql } from 'gatsby'
 import './index.css'
 
-const Drawings = ({ location }) => (
-  <Layout>
-    <GlobalStyle />
-    <Hamburger className="links-image" originPathname={location.pathname} />
-    <img className="nametag-image" src={nametag} alt="adam watters" />
-    <img src={me} alt="me" />
-    <img src={kiss} alt="kiss" />
-    <img src={boots} alt="boots" />
-    <img src={bobby} alt="bobby" />
-    <img src={drew} alt="man with mushroom pizza" />
-    <img src={joe} alt="joe presenting granola bar" />
-    <img src={girlanddog} alt="girl and dog" />
-    <img src={pizza} alt="eating pizza" />
-  </Layout>
-)
+const Drawings = ({ location, data }) => {
+  const images = data.allDropboxNode.edges.map(edge => {
+    const { name } = edge.node.localFile
+    const { src } = edge.node.localFile.childImageSharp.resize
+    return <img src={src} alt={name} />
+  })
+  console.log(images)
+  return (
+    <Layout>
+      <GlobalStyle />
+      <Hamburger className="links-image" originPathname={location.pathname} />
+      {images}
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query {
+    allDropboxNode {
+      edges {
+        node {
+          localFile {
+            name
+            childImageSharp {
+              resize(width: 300) {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Drawings
