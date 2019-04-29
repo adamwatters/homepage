@@ -115,9 +115,7 @@ const Home = ({ location }) => (
     </HeaderContainer>
     <WorkPageContainer>
       <Paragraph>
-        <h3>
-          Creative Engineer with deep experience writing code for the web.
-        </h3>
+        <h3>Creative Web Engineer</h3>
       </Paragraph>
       <Paragraph>
         <h4>Recent Doings</h4>
@@ -263,7 +261,8 @@ const Home = ({ location }) => (
       </Images>
       <Paragraph>
         <h4>
-          I spent most of 2016 learning{` `}
+          I spent most of 2016 learning
+          {` `}
           <a
             href="https://www.heartwoodschool.com/"
             target="_blank"
