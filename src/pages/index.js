@@ -124,6 +124,17 @@ const Home = ({ location }) => (
           <li>
             {' '}
             <a
+              href="https://marketplace.visualstudio.com/items?itemName=adam-watters.vscode-color-pick&ssr=false#overview"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Color Pick - the only VSCode color picker that works everywhere
+              and has no dependencies.
+            </a>
+          </li>
+          <li>
+            {' '}
+            <a
               href="https://ukiyo-e.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
