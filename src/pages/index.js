@@ -342,7 +342,7 @@ const Home = ({ location }) => (
         <ul style={{ marginBottom: '0' }}>
           <li>
             <a
-              href="https://www.theladders.com/"
+              href="https://www.theladders.com/resume-reviewer"
               target="_blank"
               rel="noopener noreferrer"
             >
